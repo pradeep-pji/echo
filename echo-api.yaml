@@ -1,0 +1,29 @@
+---
+# [START swagger]
+swagger: "2.0"
+info:
+  description: "A simple Google Cloud Endpoints API example."
+  title: "Echo API"
+  version: "1.0.0"
+host: "echo.endpoints.qa-orders.appspot.com"
+# [END swagger]
+basePath: "/"
+paths:
+  /echo:
+    get:
+      tags:
+      - "echo"
+      summary: "Create an Order."
+      operationId: "echo"
+      responses:
+        200:
+          description: "Success"
+  /echo/stranger:
+    get:
+      tags:
+      - "echoStranger"
+      summary: "Create an Order."
+      operationId: "echoStranger"
+      responses:
+        200:
+          description: "Success"

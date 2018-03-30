@@ -1,0 +1,13 @@
+runtime: custom
+api_version: '1.0'
+env: flexible
+threadsafe: true
+service: echo
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 1
+  cpu_utilization:
+    target_utilization: 0.8
+endpoints_api_service:
+  name: "echo.endpoints.qa-orders.appsot.com"
+  config_id: "2018-03-27r1"
